@@ -1,0 +1,504 @@
+/*css index.php*/
+nav {
+  display: flex; /* Menggunakan flexbox untuk tata letak yang responsif */
+  justify-content: space-between; /* Menyebar elemen secara merata */
+  align-items: center; /* Menyelaraskan elemen secara vertikal */
+  background-color: #ff0707; /* Warna latar belakang navbar merah */
+  padding: 20px; /* Padding di dalam navbar */
+  position: fixed; /* Navbar tetap di atas saat di-scroll */
+  top: 0; /* Mengatur posisi di bagian atas */
+  width: 100%; /* Lebar penuh */
+  z-index: 1; /* Pastikan navbar di atas elemen lainnya */
+}
+
+.logo-website {
+  display: flex; /* Menjadikan logo dan teks flex container */
+  align-items: center; /* Menyelaraskan elemen secara vertikal */
+}
+
+.logo-website img {
+  width: 40px; /* Lebar logo */
+  height: 40px; /* Tinggi logo */
+  margin-right: 10px; /* Jarak antara logo dan nama website */
+}
+
+.logo-website span {
+  font-size: 20px; /* Ukuran font nama website */
+  font-weight: bold; /* Membuat font tebal */
+  color: #ffffff; /* Warna teks kuning */
+}
+
+ul {
+  list-style: none; /* Menghilangkan bullet points */
+  margin: 0; /* Menghapus margin default */
+  padding: 0; /* Menghapus padding default */
+  display: flex; /* Menjadikan ul sebagai flex container */
+  align-items: center; /* Menyelaraskan item secara vertikal */
+}
+
+li {
+  position: relative; /* Posisi relatif untuk dropdown */
+  margin-right: 20px; /* Jarak antara item menu */
+}
+
+a {
+  color: #ffffff; /* Warna teks link kuning */
+  text-decoration: none; /* Menghilangkan garis bawah */
+  padding: 5px 10px; /* Padding di sekitar teks link */
+  transition: background-color 0.3s; /* Animasi transisi */
+}
+
+a:hover {
+  background-color: #fffb00; /* Latar belakang kuning saat hover */
+  color: #ff0707; /* Mengubah warna teks menjadi merah saat hover */
+  border-radius: 5px; /* Sudut bulat pada link saat hover */
+}
+
+.dropdown ul {
+  display: none; /* Menyembunyikan dropdown secara default */
+  position: absolute; /* Memposisikan dropdown di bawah menu item */
+  top: 100%; /* Memposisikan dropdown di bawah item menu */
+  left: 0; /* Memposisikan dropdown ke kiri */
+  background-color: #ff0707; /* Warna latar belakang dropdown merah */
+  padding: 10px 0; /* Padding dalam dropdown */
+  z-index: 1; /* Menempatkan dropdown di atas elemen lainnya */
+}
+
+.dropdown:hover ul {
+  display: block; /* Menampilkan dropdown saat hover pada menu item */
+}
+
+.dropdown li {
+  margin: 0; /* Menghapus margin untuk item dropdown */
+}
+
+.profile {
+  display: flex; /* Menjadikan elemen profile sebagai flex container */
+  align-items: center; /* Menyelaraskan item secara vertikal */
+}
+
+.profile img {
+  width: 30px; /* Ukuran gambar profil */
+  height: 30px; /* Ukuran gambar profil */
+  border-radius: 50%; /* Membuat gambar profil berbentuk bulat */
+  margin-right: 10px; /* Jarak antara gambar dan teks */
+}
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif; /* Menggunakan font Arial */
+  margin: 0; /* Menghapus margin default */
+  padding: 0; /* Menghapus padding default */
+  background-color: #f8f8f8; /* Warna latar belakang halaman */
+}
+
+.container {
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  justify-content: space-between; /* Menyebar elemen secara merata */
+  align-items: center; /* Menyelaraskan elemen secara vertikal */
+  padding: 200px; /* Tambahkan padding lebih banyak di sekitar konten */
+  background-color: #fff; /* Warna latar belakang putih untuk kontainer */
+  border-radius: 10px; /* Sudut bulat pada kontainer */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut pada kontainer */
+}
+
+.logo img {
+  height: 250px; /* Tinggi logo */
+  width: 250px; /* Lebar logo */
+}
+
+.content {
+  flex: 1; /* Mengizinkan konten mengambil sisa ruang */
+  padding: 20px; /* Padding di dalam konten */
+  text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.title {
+  font-size: 48px; /* Ukuran font judul diperbesar */
+  font-weight: bold; /* Font tebal untuk judul */
+  color: #ff0707; /* Warna judul merah */
+}
+
+.subtitle {
+  font-size: 24px; /* Ukuran font subtitle */
+  color: #ffcc00; /* Warna subtitle kuning */
+}
+
+.quote {
+  font-size: 18px; /* Ukuran font kutipan */
+  font-style: italic; /* Menjadikan font miring */
+  color: #333; /* Warna teks kutipan */
+  margin-top: 10px; /* Jarak atas kutipan */
+}
+
+.image-container img {
+  height: 300px; /* Tinggi gambar anggota */
+  width: 300px; /* Lebar gambar anggota */
+  border-radius: 50%; /* Sudut bulat pada gambar */
+}
+
+footer {
+  background-color: #D50000; /* Warna latar belakang merah */
+  color: #FFFFFF; /* Warna teks putih */
+  padding: 20px; /* Jarak dalam footer */
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  justify-content: space-around; /* Menyebar konten secara merata */
+  align-items: flex-start; /* Menyusun konten di bagian atas */
+  flex-wrap: wrap; /* Mengizinkan konten membungkus ke baris berikutnya jika perlu */
+}
+
+footer h3 {
+  margin-bottom: 10px; /* Jarak bawah untuk judul */
+}
+
+footer ul {
+  list-style-type: none; /* Menghapus titik pada list */
+  padding: 0; /* Menghapus padding pada list */
+}
+
+footer ul li {
+  margin-bottom: 5px; /* Jarak bawah untuk item list */
+}
+
+footer a {
+  color: #FFFFFF; /* Warna link putih */
+  text-decoration: none; /* Menghapus garis bawah pada link */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+
+footer .social-media {
+  margin-top: 20px; /* Jarak atas untuk sosial media */
+}
+
+footer .address {
+  text-align: center; /* Menengahkan alamat */
+}
+
+@media (max-width: 768px) {
+  footer {
+      flex-direction: column; /* Mengubah arah menjadi kolom untuk layar kecil */
+      align-items: center; /* Menengahkan konten */
+  }
+}
+
+
+/*css tambah kunjungan*/
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-group {
+  display: flex; /* Menggunakan flexbox untuk penataan */
+  align-items: center; /* Vertikal center */
+  margin-bottom: 15px;
+}
+
+label {
+  width: 30%; /* Lebar label */
+  margin-right: 10px; /* Jarak antara label dan input */
+}
+.form-input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Mengatur lebar input dan select menjadi 100% */
+  box-sizing: border-box; /* Memastikan padding dan border tidak mengubah ukuran total */
+}
+
+/* Style untuk form input dan select agar ukurannya sama */
+input[type="text"], select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px; /* Samakan ukuran font */
+  height: 40px; /* Samakan tinggi dengan input */
+}
+
+/* Agar select tidak menggunakan gaya default */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #ffeb3b; /* Warna background kuning */
+  padding: 10px;
+}
+
+/* Style tambahan jika ingin menambahkan icon dropdown manual */
+select:after {
+  content: '\25BC'; /* Icon panah bawah */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Agar icon tidak bisa di-klik */
+}
+
+
+input[type="submit"] {
+  background-color: #ffeb3b; /* Warna kuning untuk tombol simpan */
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #fdd835; /* Warna kuning yang lebih gelap saat hover */
+}
+
+input[type="reset"] {
+  background-color: #f44336; /* Warna merah untuk tombol batal */
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="reset"]:hover {
+  background-color: #e53935; /* Warna merah yang lebih gelap saat hover */
+}
+
+.center {
+  text-align: center;
+}
+
+
+/*css lihat kunjungan*/
+h1 {
+  color: #000000; /* Warna teks judul */
+  margin-top: 20px; /* Jarak atas judul */
+}
+
+table {
+  width: 100%; /* Lebar tabel 100% */
+  border-collapse: collapse; /* Menghilangkan jarak antara border sel */
+  margin: 20px 0; /* Margin atas dan bawah tabel */
+  background-color: white; /* Latar belakang tabel putih */
+}
+
+thead {
+  background-color: #ffcc00; /* Warna latar belakang header tabel kuning */
+  color: black; /* Warna teks header hitam */
+}
+
+th, td {
+  padding: 10px; /* Jarak dalam sel */
+  text-align: left; /* Teks rata kiri */
+  border: 1px solid #dddddd; /* Border pada sel */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Warna latar belakang baris genap */
+}
+
+tbody tr:hover {
+  background-color: #e0e0e0; /* Warna latar belakang saat hover */
+}
+
+/*css edit kunjungan*/
+h1 {
+  color: #000000; /* Warna teks judul */
+  text-align: center; /* Rata tengah judul */
+  margin-top: 20px; /* Jarak atas judul */
+}
+
+form {
+  text-align: center; /* Rata tengah form */
+  margin-bottom: 20px; /* Margin bawah form */
+}
+
+input[type="text"] {
+  padding: 8px; /* Jarak dalam input */
+  width: 200px; /* Lebar input */
+  border: 1px solid #cccccc; /* Border input */
+  border-radius: 4px; /* Sudut membulat pada input */
+}
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif; /* Menggunakan font Arial */
+  background-color: #f4f4f4; /* Warna latar belakang halaman */
+}
+button {
+  padding: 8px 12px; /* Jarak dalam tombol */
+  background-color: #ffcc00; /* Warna latar belakang tombol kuning */
+  border: none; /* Menghilangkan border tombol */
+  border-radius: 4px; /* Sudut membulat pada tombol */
+  cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+button:hover {
+  background-color: #e0b800; /* Mengubah warna tombol saat hover */
+}
+
+table {
+  width: 100%; /* Lebar tabel 100% */
+  border-collapse: collapse; /* Menghilangkan jarak antara border sel */
+  margin: 20px 0; /* Margin atas dan bawah tabel */
+  background-color: white; /* Latar belakang tabel putih */
+}
+
+thead {
+  background-color: #ffcc00; /* Warna latar belakang header tabel kuning */
+  color: black; /* Warna teks header hitam */
+}
+
+th, td {
+  padding: 10px; /* Jarak dalam sel */
+  text-align: left; /* Teks rata kiri */
+  border: 1px solid #dddddd; /* Border pada sel */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Warna latar belakang baris genap */
+}
+
+tbody tr:hover {
+  background-color: #e0e0e0; /* Warna latar belakang saat hover */
+}
+
+span a {
+  color: red; /* Warna teks untuk link */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+}
+
+span a:hover {
+  text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+
+/* Style untuk Form Tambah Stok Obat */
+.tambah-stok-obat .form-container {
+  width: 80%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #ffffff;
+}
+
+.tambah-stok-obat .form-group {
+  margin-bottom: 15px;
+}
+
+.tambah-stok-obat .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.tambah-stok-obat .form-group input, 
+.tambah-stok-obat .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ffee00;
+  border-radius: 5px;
+}
+
+.tambah-stok-obat button {
+  background-color: #fafe20;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.tambah-stok-obat button:hover {
+  background-color: #f2ff3b;
+}
+
+.tambah-stok-obat button.batal-button {
+  background-color: red;
+}
+
+.tambah-stok-obat button.batal-button:hover {
+  background-color: darkred;
+}
+
+.tambah-stok-obat .center-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="date"] {
+    background-color: #ffe311; 
+    border: 1px solid #fbff01; 
+    padding: 10px; /* Padding di dalam input */
+    border-radius: 4px; /* Sudut sedikit melengkung */
+    width: 100%; /* Lebar penuh */
+    box-sizing: border-box; /* Agar padding tidak menambah lebar */
+    font-size: 16px; /* Ukuran teks */
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+textarea:focus,
+input[type="date"]:focus {
+    border-color: #ffcc00; /* Warna batas kuning lebih cerah saat input fokus */
+    outline: none; /* Menghilangkan outline default saat fokus */
+}
+
+/* Gaya untuk tombol */
+button[type="submit"] {
+    background-color: #a72828; /* Warna hijau untuk tombol simpan */
+    color: white; /* Warna teks putih */
+    border: none; /* Tanpa batas */
+    padding: 10px 15px; /* Jarak dalam tombol */
+    text-align: center; /* Teks berada di tengah */
+    text-decoration: none; /* Tanpa garis bawah */
+    display: inline-block; /* Menampilkan tombol dalam satu baris */
+    margin: 10px 0; /* Margin antara tombol */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah elemen klik */
+    border-radius: 4px; /* Sudut melengkung pada tombol */
+    font-size: 16px; /* Ukuran font */
+}
+/* Gaya untuk kolom input pencarian */
+input[name="keyword"] {
+  padding: 10px;
+  border: 1px solid #ccc; /* Border tipis berwarna abu-abu */
+  border-radius: 5px; /* Sudut membulat */
+  background-color: #ffeb3b; /* Warna kuning */
+  width: 250px; /* Lebar kolom pencarian */
+  margin-right: 5px; /* Jarak dengan tombol */
+}
+
+/* Gaya untuk tombol pencarian */
+button[name="cari"] {
+  padding: 10px 15px; /* Padding atas/bawah dan kiri/kanan */
+  border: none; /* Menghilangkan border default */
+  border-radius: 5px; /* Sudut membulat */
+  background-color: #f44336; /* Warna merah */
+  color: white; /* Warna teks putih */
+  cursor: pointer; /* Menunjukkan bahwa ini bisa diklik */
+}
+
+/* Gaya saat hover pada tombol */
+button[name="cari"]:hover {
+  background-color: #d32f2f; /* Warna merah gelap saat hover */
+}
+
+/* Menggunakan font Awesome untuk logo search */
+.icon {
+  margin-right: 5px; /* Jarak antara ikon dan teks */
+}
